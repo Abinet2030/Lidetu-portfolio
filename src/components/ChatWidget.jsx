@@ -1,9 +1,14 @@
 import React, { useState } from 'react'
+import { createPortal } from 'react-dom'
 import { FaRobot, FaTimes } from 'react-icons/fa'
 import bot from '../data/bot.json'
 
 function answer(question) {
   const q = question.toLowerCase()
+  // Custom greeting handler
+  if (/\b(hi|hello|hey|good\s*morning|good\s*afternoon|good\s*evening)\b/i.test(question)) {
+    return "HI, what's up? What can I help you with?"
+  }
   for (const item of bot.faqs) {
     if (item.q.some(k => q.includes(k.toLowerCase()))) return item.a
   }
@@ -24,8 +29,8 @@ export default function ChatWidget() {
     setInput('')
   }
 
-  return (
-    <div style={{ position: 'fixed', right: 20, bottom: 20, zIndex: 1000 }}>
+  const widget = (
+    <div style={{ position: 'fixed', right: 20, bottom: 20, zIndex: 9999, pointerEvents: 'auto' }}>
       {/* Floating button */}
       <button
         aria-label={open ? 'Close chat' : 'Open chat'}
@@ -100,4 +105,8 @@ export default function ChatWidget() {
       )}
     </div>
   )
+
+  // Render via portal to avoid parent stacking/overflow issues
+  const body = typeof document !== 'undefined' ? document.body : null
+  return body ? createPortal(widget, body) : widget
 }
