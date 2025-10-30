@@ -9,8 +9,8 @@ import Skills from './sections/Skills.jsx'
 import Resume from './sections/Resume.jsx'
 import Contact from './sections/Contact.jsx'
 import Testimonials from './sections/Testimonials.jsx'
-import AIChat from './sections/AIChat.jsx'
 import Footer from './components/Footer.jsx'
+import ChatWidget from './components/ChatWidget.jsx'
 
 function App() {
   return (
@@ -26,9 +26,9 @@ function App() {
       <Skills />
       <Resume />
       <Testimonials />
-      <AIChat />
       <Contact />
       <Footer />
+      <ChatWidget />
     </div>
   )
 }
