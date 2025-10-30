@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Portfolio Site",
+    "description": "Interactive portfolio with animations and 3D elements.",
+    "category": "Frontend",
+    "tags": ["React", "Framer Motion"],
+    "demo": "#",
+    "repo": "#"
+  },
+  {
+    "id": 2,
+    "title": "Admin Dashboard",
+    "description": "System admin dashboard with charts and user management.",
+    "category": "Web Apps",
+    "tags": ["Vite", "React"],
+    "demo": "#",
+    "repo": "#"
+  },
+  {
+    "id": 3,
+    "title": "API Service",
+    "description": "Node backend service for analytics.",
+    "category": "Backend",
+    "tags": ["Node", "Express"],
+    "demo": "#",
+    "repo": "#"
+  },
+  {
+    "id": 4,
+    "title": "Travel Agency",
+    "description": "Travel agency website with tour listings and booking flow.",
+    "category": "Web Apps",
+    "tags": [],
+    "demo": "https://travel-agency-lac-nine.vercel.app/",
+    "repo": "#"
+  },
+  {
+    "id": 5,
+    "title": "Real Estate Management System",
+    "description": "Property listing and management platform.",
+    "category": "Web Apps",
+    "tags": [],
+    "demo": "https://real-estate-management-system-dhgf.vercel.app/",
+    "repo": "#"
+  },
+  {
+    "id": 6,
+    "title": "Kallah Trading PLC - Services",
+    "description": "Company services page for Kallah Trading PLC.",
+    "category": "Web Apps",
+    "tags": [],
+    "demo": "https://kallah-trading-plc.vercel.app/service",
+    "repo": "#"
+  }
+]

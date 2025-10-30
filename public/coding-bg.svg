@@ -1,0 +1,33 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity=".35"/>
+      <stop offset="100%" stop-color="#34d399" stop-opacity=".35"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#g)"/>
+  <!-- desk -->
+  <rect x="0" y="650" width="1600" height="250" fill="#0a0f1a"/>
+  <!-- monitor -->
+  <rect x="520" y="180" width="560" height="360" rx="16" fill="#0d1626" stroke="#1f2a3d"/>
+  <rect x="540" y="200" width="520" height="320" rx="12" fill="#0b1324"/>
+  <!-- code lines -->
+  <g opacity="0.9">
+    <rect x="560" y="220" width="180" height="10" rx="5" fill="#1d3a5a"/>
+    <rect x="560" y="245" width="280" height="10" rx="5" fill="#1d3a5a"/>
+    <rect x="560" y="270" width="210" height="10" rx="5" fill="#1d3a5a"/>
+    <rect x="560" y="295" width="320" height="10" rx="5" fill="#1d3a5a"/>
+    <rect x="560" y="320" width="260" height="10" rx="5" fill="#1d3a5a"/>
+    <rect x="560" y="345" width="300" height="10" rx="5" fill="#1d3a5a"/>
+    <rect x="560" y="370" width="180" height="10" rx="5" fill="#1d3a5a"/>
+  </g>
+  <!-- person silhouette -->
+  <circle cx="1120" cy="520" r="56" fill="url(#glow)"/>
+  <rect x="1068" y="565" width="104" height="90" rx="46" fill="url(#glow)"/>
+  <!-- ambient glow -->
+  <ellipse cx="800" cy="560" rx="420" ry="160" fill="url(#glow)" opacity="0.25"/>
+</svg>

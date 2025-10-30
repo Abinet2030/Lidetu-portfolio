@@ -1,0 +1,9 @@
+{
+  "fallback": "I don't know that yet, but you can ask me about skills, projects, or contact info!",
+  "faqs": [
+    { "q": ["name", "who are you"], "a": "I'm Lidetu, a Frontend Developer and System Admin." },
+    { "q": ["skills", "tech"], "a": "I work with React, graphics, UI/UX, and system automation." },
+    { "q": ["contact", "email"], "a": "Use the contact form below to reach me or mabinet22@gmail.com." },
+    { "q": ["projects", "portfolio"], "a": "Check the Projects section for selected work and demos." }
+  ]
+}
