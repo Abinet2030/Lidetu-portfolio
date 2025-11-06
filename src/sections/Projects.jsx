@@ -8,6 +8,18 @@ const categories = ['All', 'Web Apps', 'Frontend', 'Backend']
 export default function Projects() {
   const [filter, setFilter] = useState('All')
   const { query } = useSearch()
+  const fallbackFor = (title) => {
+    const text = encodeURIComponent(title || 'Project')
+    const bg = 'eef2f7'
+    const fg = '2d3748'
+    return `data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' width='800' height='600'>\
+  <rect width='100%' height='100%' fill='%23${bg}'/>\
+  <g>\
+    <text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%23${fg}' font-family='Arial, Helvetica, sans-serif' font-size='28' font-weight='600'>${text}</text>\
+  </g>\
+ </svg>`
+  }
   const items = useMemo(() => {
     const byCategory = filter === 'All' ? data : data.filter(p => p.category === filter)
     if (!query) return byCategory
@@ -38,6 +50,14 @@ export default function Projects() {
               transition={{ type: 'spring', stiffness: 250, damping: 18 }}
               className="card"
             >
+              <div className="card-media">
+                <img
+                  src={p.image || `https://picsum.photos/seed/${encodeURIComponent(p.title)}/800/600`}
+                  alt={p.title}
+                  onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = fallbackFor(p.title) }}
+                  style={{ width: '100%', height: 180, objectFit: 'cover', borderRadius: 8 }}
+                />
+              </div>
               <div className="card-title">{p.title}</div>
               <div className="card-sub">{p.description}</div>
               <div className="tags">

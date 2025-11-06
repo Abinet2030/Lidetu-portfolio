@@ -45,8 +45,19 @@ export default function Hero() {
       />
 
       <div className="container" style={{ position: 'relative', zIndex: 2, padding: '0 16px' }}>
-        <div style={{ display: 'grid', placeItems: 'center', gap: 24, gridTemplateColumns: '1fr', maxWidth: 1100, margin: '0 auto', minHeight: 'calc(100vh - 80px)' }}>
-          <div className="hero-copy" style={{ textAlign: 'center', maxWidth: 780 }}>
+        <div
+          style={{
+            display: 'grid',
+            alignItems: 'center',
+            gap: 32,
+            gridTemplateColumns: '1.2fr .8fr',
+            maxWidth: 1100,
+            margin: '0 auto',
+            minHeight: 'calc(100vh - 80px)'
+          }}
+        >
+          {/* Left: Copy */}
+          <div className="hero-copy" style={{ textAlign: 'left', maxWidth: 780 }}>
             <motion.h1
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -70,6 +81,27 @@ export default function Hero() {
               />
             </motion.div>
           </div>
+
+          {/* Right: Profile avatar card */}
+          <motion.div
+            initial={{ y: 60, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.7, delay: 0.2, type: 'spring', stiffness: 140, damping: 18 }}
+            style={{ justifySelf: 'end', width: '100%', maxWidth: 340 }}
+          >
+            <div className="card" style={{ padding: 20, textAlign: 'center' }}>
+              <div style={{ display: 'grid', placeItems: 'center', marginBottom: 12 }}>
+                <img
+                  src={"/avatar.jpg"}
+                  onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = `https://i.pravatar.cc/300?img=12` }}
+                  alt="Lidetu Avatar"
+                  style={{ width: 140, height: 140, borderRadius: '50%', objectFit: 'cover', boxShadow: '0 6px 20px rgba(0,0,0,.25)' }}
+                />
+              </div>
+              <div style={{ fontWeight: 700, fontSize: 20 }}>Lidetu</div>
+              <div style={{ color: 'var(--muted)', marginTop: 4 }}>Software Developer</div>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>
