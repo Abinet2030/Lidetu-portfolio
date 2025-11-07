@@ -51,7 +51,7 @@
     "description": "Company services page for Kallah Trading PLC.",
     "category": "Web Apps",
     "tags": [],
-    "demo": "https://kallah-trading-plc.vercel.app/service",
+    "demo": "https://kallah-trading-plc.vercel.app/",
     "repo": "#"
   }
 ]
