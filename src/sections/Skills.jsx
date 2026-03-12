@@ -13,9 +13,12 @@ export default function Skills() {
   const C = 2 * Math.PI * radius
 
   return (
-    <section data-aos="fade-up" className="section">
+    <section id="skills" data-aos="fade-up" className="section">
       <div className="container">
-        <h2 style={{ textAlign: 'center', marginBottom: 16 }}>Skills</h2>
+        <div className="section-head">
+          <div className="section-kicker">Expertise</div>
+          <h2 className="section-title">Skills</h2>
+        </div>
         <div className="grid grid-center">
           {skills.map(s => {
             const offset = C * (1 - s.level / 100)

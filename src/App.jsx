@@ -11,16 +11,20 @@ import Contact from './sections/Contact.jsx'
 import Testimonials from './sections/Testimonials.jsx'
 import Footer from './components/Footer.jsx'
 import ChatWidget from './components/ChatWidget.jsx'
+import Stats from './sections/Stats.jsx'
+import Services from './sections/Services.jsx'
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Helmet>
         <title>Lidu Tech | Lidetu Portfolio</title>
       </Helmet>
       <ThemeToggle />
       <Header />
       <Hero />
+      <Stats />
+      <Services />
       <About />
       <Projects />
       <Skills />

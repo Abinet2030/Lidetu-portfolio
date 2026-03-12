@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import emailjs from '@emailjs/browser'
 import Confetti from 'react-confetti'
 
 const TO_EMAIL = 'mabinet22@gmail.com'
@@ -29,7 +28,10 @@ export default function Contact() {
   return (
     <section id="contact" data-aos="fade-up" className="section">
       <div className="container" style={{ maxWidth: 800 }}>
-        <h2 style={{ textAlign: 'center', marginBottom: 16 }}>Contact</h2>
+        <div className="section-head">
+          <div className="section-kicker">Contact</div>
+          <h2 className="section-title">Let's Build Something</h2>
+        </div>
         <div
           style={{
             border: '1px solid transparent',
