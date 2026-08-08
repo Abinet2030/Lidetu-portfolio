@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react'
 import { useSearch } from '../providers/SearchProvider'
 import { motion } from 'framer-motion'
-import { FiEye } from 'react-icons/fi'
+import { FiEye, FiStar } from 'react-icons/fi'
 import data from '../data/projects.json'
 
 const categories = ['All', 'Web Apps', 'Frontend', 'Backend']
@@ -41,7 +41,7 @@ export default function Projects() {
       <div className="container">
         <div className="section-head" data-aos="fade-up">
           <div className="section-kicker">Selected Work</div>
-          <h2 className="section-title">Projects</h2>
+          <h2 className="section-title">Featured Projects</h2>
         </div>
         <div className="btn-group" style={{ margin: '12px 0 24px' }}>
           {categories.map(c => (
@@ -63,29 +63,38 @@ export default function Projects() {
             items.map(p => (
               <motion.div
                 key={p.id}
-                whileHover={{ y: -4, scale: 1.01 }}
-                transition={{ type: 'spring', stiffness: 250, damping: 18 }}
-                className="card"
+                whileHover={{ y: -8 }}
+                transition={{ type: 'spring', stiffness: 300, damping: 25 }}
+                className={`project-card card ${p.featured ? 'featured' : ''}`}
               >
+                {p.featured && (
+                  <div className="featured-badge">
+                    <FiStar size={14} />
+                    Featured
+                  </div>
+                )}
                 <div className="card-media">
                   <img
                     src={p.image || `https://picsum.photos/seed/${encodeURIComponent(p.title)}/800/600`}
                     alt={p.title}
                     onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = fallbackFor(p.title) }}
-                    style={{ width: '100%', height: 180, objectFit: 'cover', borderRadius: 8 }}
+                    style={{ width: '100%', height: 200, objectFit: 'cover', borderRadius: 12 }}
                   />
+                  <div className="project-overlay">
+                    <a className="icon-link" href={p.demo} target="_blank" rel="noreferrer" aria-label={`View ${p.title}`}>
+                      <FiEye size={24} />
+                    </a>
+                  </div>
+                </div>
+                <div className="card-meta">
+                  <span className="project-year">{p.year}</span>
+                  {p.result && <span className="project-result">{p.result}</span>}
                 </div>
                 <div className="card-title">{p.title}</div>
                 <div className="card-sub">{p.description}</div>
                 <div className="tags">
-                  {p.tags.map(t => <span key={t} className="tag">#{t}</span>)}
-                </div>
-                <div className="card-actions">
-                  {p.demo && (
-                    <a className="icon-link" href={p.demo} target="_blank" rel="noreferrer" aria-label={`View ${p.title}`}>
-                      <FiEye />
-                    </a>
-                  )}
+                  {p.tags.slice(0, 3).map(t => <span key={t} className="tag">{t}</span>)}
+                  {p.tags.length > 3 && <span className="tag-more">+{p.tags.length - 3}</span>}
                 </div>
               </motion.div>
             ))

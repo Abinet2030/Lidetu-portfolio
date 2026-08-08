@@ -1,9 +1,12 @@
 {
-  "fallback": "I don't know that yet, but you can ask me about skills, projects, or contact info!",
+  "fallback": "I don't know that yet, but you can ask me about skills, projects, experience, or contact info!",
   "faqs": [
-    { "q": ["name", "who are you"], "a": "I'm Lidetu, a Web Developer and System Admin." },
-    { "q": ["skills", "tech"], "a": "I work with React, graphics, UI/UX, and system automation." },
-    { "q": ["contact", "email"], "a": "Use the contact form below to reach me or mabinet22@gmail.com." },
-    { "q": ["projects", "portfolio"], "a": "Check the Projects section for selected work and demos." }
+    { "q": ["name", "who are you", "about"], "a": "I'm Abinet, a Full-Stack Web Developer and System Administrator. I build high-performance web applications and maintain reliable systems." },
+    { "q": ["skills", "tech", "technologies", "expertise"], "a": "I specialize in React, JavaScript, Node.js, TypeScript, CSS/Animations, Framer Motion, Tailwind CSS, PostgreSQL, MongoDB, Docker, and AWS. I also have strong system administration skills." },
+    { "q": ["contact", "email", "reach", "message"], "a": "You can use the contact form below or email me at mabinet22@gmail.com. I'm always open to new opportunities and collaborations!" },
+    { "q": ["projects", "portfolio", "work", "demo"], "a": "Check the Projects section to see my selected work. I have experience with e-commerce platforms, admin dashboards, real estate management, travel booking systems, and more." },
+    { "q": ["experience", "background"], "a": "I have extensive experience in full-stack development, UI/UX design, system administration, and DevOps. I focus on clean code, performance optimization, and user-centered design." },
+    { "q": ["services", "what do you do"], "a": "I offer web app development, UI/UX design with motion, system administration, security, maintenance, and infrastructure optimization." },
+    { "q": ["hire", "work with me", "collaboration"], "a": "I'm available for projects! Feel free to reach out via the contact form or email mabinet22@gmail.com. Let's build something great together!" }
   ]
 }

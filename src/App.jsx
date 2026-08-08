@@ -6,7 +6,6 @@ import Header from './components/Header.jsx'
 import About from './sections/About.jsx'
 import Projects from './sections/Projects.jsx'
 import Skills from './sections/Skills.jsx'
-import Resume from './sections/Resume.jsx'
 import Contact from './sections/Contact.jsx'
 import Testimonials from './sections/Testimonials.jsx'
 import Footer from './components/Footer.jsx'
@@ -18,7 +17,7 @@ function App() {
   return (
     <div className="app">
       <Helmet>
-        <title>Lidu Tech | Lidetu Portfolio</title>
+        <title>Lidu Tech | Abinet Portfolio</title>
       </Helmet>
       <ThemeToggle />
       <Header />
@@ -28,7 +27,6 @@ function App() {
       <About />
       <Projects />
       <Skills />
-      <Resume />
       <Testimonials />
       <Contact />
       <Footer />

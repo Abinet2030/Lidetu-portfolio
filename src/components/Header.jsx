@@ -30,7 +30,6 @@ export default function Header() {
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
-          <a href="#resume">Resume</a>
           <a href="#contact">Contact</a>
         </nav>
         <form className="search" onSubmit={onSubmit}>
@@ -60,7 +59,6 @@ export default function Header() {
           <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
           <a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a>
           <a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a>
-          <a href="#resume" onClick={() => setMenuOpen(false)}>Resume</a>
           <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
         </nav>
         <form className="search" onSubmit={onSubmit}>

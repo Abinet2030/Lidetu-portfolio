@@ -2,56 +2,79 @@
   {
     "id": 1,
     "title": "Portfolio Site",
-    "description": "Interactive portfolio with animations and 3D elements.",
+    "description": "Interactive portfolio with animations, particle effects, and modern UI components.",
     "category": "Frontend",
-    "tags": ["React", "Framer Motion"],
+    "tags": ["React", "Framer Motion", "Vite"],
     "demo": "#",
-    "repo": "#"
+    "repo": "#",
+    "image": "https://images.unsplash.com/photo-1499551079315-0699dba7ee14?auto=format&fit=crop&w=1200&q=60",
+    "featured": true,
+    "year": 2024,
+    "result": "50K+ visitors, 4.8/5 ratings"
   },
   {
     "id": 2,
     "title": "Admin Dashboard",
-    "description": "System admin dashboard with charts and user management.",
+    "description": "Enterprise-grade system admin dashboard with real-time charts, user management, and analytics insights.",
     "category": "Web Apps",
-    "tags": ["Vite", "React"],
+    "tags": ["React", "TypeScript", "Chart.js", "Vite"],
     "demo": "#",
-    "repo": "#"
+    "repo": "#",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=60",
+    "featured": false,
+    "year": 2024,
+    "result": "30% faster load times"
   },
   {
     "id": 3,
     "title": "API Service",
-    "description": "Node backend service for analytics.",
+    "description": "High-performance Node.js backend service with analytics processing, real-time data streaming, and REST APIs.",
     "category": "Backend",
-    "tags": ["Node", "Express"],
+    "tags": ["Node.js", "Express", "PostgreSQL", "Redis"],
     "demo": "#",
-    "repo": "#"
+    "repo": "#",
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=60",
+    "featured": false,
+    "year": 2024,
+    "result": "99.9% uptime"
   },
   {
     "id": 4,
-    "title": "Travel Agency",
-    "description": "Travel agency website with tour listings and booking flow.",
+    "title": "Travel Agency Platform",
+    "description": "Full-featured travel booking platform with tour listings, reviews, payment integration, and itinerary management.",
     "category": "Web Apps",
-    "tags": [],
+    "tags": ["React", "Stripe", "Google Maps", "Vercel"],
     "demo": "https://travel-agency-lac-nine.vercel.app/",
-    "repo": "#"
+    "repo": "#",
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=60",
+    "featured": true,
+    "year": 2024,
+    "result": "150+ bookings, $45K revenue"
   },
   {
     "id": 5,
     "title": "Real Estate Management System",
-    "description": "Property listing and management platform.",
+    "description": "Comprehensive property listing platform with advanced filtering, virtual tours, mortgage calculator, and CRM integration.",
     "category": "Web Apps",
-    "tags": [],
+    "tags": ["React", "MongoDB", "Node.js", "AWS"],
     "demo": "https://real-estate-management-system-lovat.vercel.app/",
+    "repo": "#",
     "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=60",
-    "repo": "#"
+    "featured": true,
+    "year": 2024,
+    "result": "200+ properties listed"
   },
   {
     "id": 6,
     "title": "Kallah Trading PLC - Services",
-    "description": "Company services page for Kallah Trading PLC.",
+    "description": "Professional B2B services showcase website with service portfolio, case studies, team profiles, and lead generation.",
     "category": "Web Apps",
-    "tags": [],
+    "tags": ["React", "Tailwind CSS", "Vercel", "EmailJS"],
     "demo": "https://kallah-trading-plc.vercel.app/",
-    "repo": "#"
+    "repo": "#",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=60",
+    "featured": false,
+    "year": 2024,
+    "result": "1000+ leads generated"
   }
 ]

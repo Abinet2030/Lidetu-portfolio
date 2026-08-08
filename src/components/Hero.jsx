@@ -41,7 +41,7 @@ export default function Hero() {
               transition={{ duration: 0.6 }}
               className="hero-title"
             >
-              Hi, I'm Lidetu
+              Hi, I'm Abinet
             </motion.h1>
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }}>
               <TypeAnimation
@@ -75,9 +75,9 @@ export default function Hero() {
           >
             <div className="card avatar-card">
               <div className="avatar-ring">
-                <img src="/profile.svg" alt="Lidetu Avatar" />
+                <img src="/profile.svg" alt="Abinet Avatar" />
               </div>
-              <div style={{ fontWeight: 700, fontSize: 20 }}>Lidetu</div>
+              <div style={{ fontWeight: 700, fontSize: 20 }}>Abinet</div>
               <div style={{ color: 'var(--muted-foreground)', marginTop: 4 }}>Software Developer</div>
             </div>
           </motion.div>
